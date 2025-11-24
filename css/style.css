@@ -105,7 +105,6 @@
     font-weight: bold !important;
     color: #e60000 !important;
 }
-    }
     
     .phone-block {
         flex: none;
@@ -257,6 +256,7 @@ nav ul li a:focus,
     font-size: 14px;
     font-weight: bold;
 }
+
 
 
 
