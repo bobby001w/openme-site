@@ -100,14 +100,14 @@
         margin-right: 10px;
     }
     
-  a.logo .logo-text {
+ .logo-text {
     font-size: 2.5rem !important;
-    font-weight: bold !important;
-    color: #e60000 !important;
-    line-height: normal !important;
-    margin: 0 !important;
-    padding: 0 !important;
 }
+
+@media (max-width: 768px) {
+    .logo-text {
+        font-size: 2.5rem !important; /* переконайтеся, що тут теж великий розмір */
+    }
 }
     }
     
@@ -261,5 +261,6 @@ nav ul li a:focus,
     font-size: 14px;
     font-weight: bold;
 }
+
 
 
