@@ -100,10 +100,14 @@
         margin-right: 10px;
     }
     
-   .logo-text {
+  a.logo .logo-text {
     font-size: 2.5rem !important;
-    font-weight: bold;
-    color: #e60000;
+    font-weight: bold !important;
+    color: #e60000 !important;
+    line-height: normal !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
 }
     }
     
@@ -257,4 +261,5 @@ nav ul li a:focus,
     font-size: 14px;
     font-weight: bold;
 }
+
 
