@@ -1,6 +1,30 @@
 /* Додайте цей шрифт для іконок */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
+/* Логотип + текст — пропорційні та вирівняні */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* відстань між зображенням і текстом */
+    /* якщо потрібно — можна вказати height або line-height, залежно від розмітки */
+}
+
+.logo-image {
+    /* Розмір логотипа відносний до шрифту (буде масштабуватися разом з текстом) */
+    height: 1.6em;
+    width: auto;
+    max-height: 3.2rem; /* захист від занадто великих зображень */
+    display: block;
+}
+
+.logo-text {
+    font-size: 1.6rem; /* базовий розмір тексту поруч із логотипом */
+    font-weight: 700;
+    color: #e60000;
+    line-height: 1;
+    margin: 0;
+}
+
 /* Стилі для навігаційних кнопок */
 .nav-item {
     display: inline-block;
@@ -35,7 +59,8 @@
 }
 
 /* Виправлення кольору тексту в service-item */
-.service-item p {
+.service-item p,
+.service-item-pricing p {
     color: #666;
     margin-bottom: 20px;
     line-height: 1.6;
@@ -77,7 +102,6 @@
 }
 
 .whatsapp-btn {
-    background-color: #25d366;
     background: linear-gradient(135deg, #25d366, #128C7E);
 }
 
@@ -96,15 +120,16 @@
     }
     
     .logo-image {
-        height: 40px;
+        height: 1.4em; /* трохи менше на планшетах/малих екранах */
+        max-height: 2.4rem;
         margin-right: 10px;
     }
     
-.logo-text {
-    font-size: 40px !important;
-    font-weight: bold !important;
-    color: #e60000 !important;
-}
+    .logo-text {
+        font-size: 1.4rem !important;
+        font-weight: bold !important;
+        color: #e60000 !important;
+    }
     
     .phone-block {
         flex: none;
@@ -119,6 +144,15 @@
 /* Додаткові покращення для герої секції */
 .hero {
     background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Вимикаємо fixed background на пристроях з сенсором — щоб уникнути багів на мобільних */
+@supports (-webkit-overflow-scrolling: touch) {
+    .hero {
+        background-attachment: scroll;
+    }
 }
 
 /* ПОМАРАНЧЕВА КНОПКА - ВИПРАВЛЕНА */
@@ -129,15 +163,15 @@
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    display: inline-block;
+    /* використовуємо flex для центрування вмісту кнопки */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.1rem;
     transition: all 0.3s;
     border: 2px solid #e60000 !important;
     text-align: center;
     min-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .btn:hover {
@@ -162,11 +196,12 @@
 /* Додаткові медіа-запити для дуже малих екранів */
 @media (max-width: 360px) {
     .logo-image {
-        height: 35px;
+        height: 1.2em;
+        max-height: 2rem;
     }
     
     .logo-text {
-        font-size: 18px;
+        font-size: 1rem;
     }
     
     .hero h1 {
@@ -256,8 +291,3 @@ nav ul li a:focus,
     font-size: 14px;
     font-weight: bold;
 }
-
-
-
-
-
