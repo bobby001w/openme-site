@@ -18,11 +18,12 @@
 }
 
 .logo-text {
-    font-size: 2rem; /* базовий розмір тексту поруч із логотипом */
-    font-weight: 700;
-    color: #e60000;
-    line-height: 1;
-    margin: 0;
+   font-size: 3.5rem;   /* Дуже великий розмір */
+  font-weight: 900;    /* Максимальна жирність (black) */
+  color: #2c3e50;      /* Темно-сизий колір для контрасту */
+  text-align: center;  /* Вирівнювання по центру */
+  margin-bottom: 10px; /* Відступ знизу */
+  text-transform: uppercase; /* Робить всі літери великими (опціонально) */
 }
 
 /* Стилі для навігаційних кнопок */
@@ -291,4 +292,5 @@ nav ul li a:focus,
     font-size: 14px;
     font-weight: bold;
 }
+
 
