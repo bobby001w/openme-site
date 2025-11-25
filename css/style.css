@@ -21,7 +21,6 @@
     font-size: 2.5rem;
     font-weight: 900;
     color: white;
-    text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     letter-spacing: 1px;
 }
@@ -292,6 +291,7 @@ nav ul li a:focus,
     font-size: 14px;
     font-weight: bold;
 }
+
 
 
 
