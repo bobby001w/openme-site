@@ -11,14 +11,14 @@
 
 .logo-image {
     /* Розмір логотипа відносний до шрифту (буде масштабуватися разом з текстом) */
-    height: 1.6em;
+    height: 1.6\\em;
     width: auto;
     max-height: 3.2rem; /* захист від занадто великих зображень */
     display: block;
 }
 
 .logo-text {
-    font-size: 1.6rem; /* базовий розмір тексту поруч із логотипом */
+    font-size: 2rem; /* базовий розмір тексту поруч із логотипом */
     font-weight: 700;
     color: #e60000;
     line-height: 1;
@@ -291,3 +291,4 @@ nav ul li a:focus,
     font-size: 14px;
     font-weight: bold;
 }
+
