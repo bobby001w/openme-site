@@ -292,6 +292,54 @@ nav ul li a:focus,
     font-weight: bold;
 }
 
+/* ТЕРМІНОВІ ВИПРАВЛЕННЯ */
+/* Видалення всіх непотрібних рамок та ліній */
+section, .container, .contact-wrapper, .contact-info, .contact-form {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Фікс для кнопок месенджерів */
+.messenger-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.messenger-btn {
+    flex: 1;
+    min-width: 100px;
+    max-width: 130px;
+    padding: 10px 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Видалення синього підсвічування */
+a[href^="tel:"] {
+    color: white !important;
+    text-decoration: none !important;
+    -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+}
+
+/* Для всіх телефонних посилань */
+.phone, .hero-phone, .phone-button {
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Виправлення форми */
+.contact-form form {
+    border: none;
+    padding: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    background: rgba(255,255,255,0.1) !important;
+}
 
 
 
