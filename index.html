@@ -22,7 +22,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             padding: 0;
             box-sizing: border-box;
         }
-        
+
+        html {
+            width: 100%;
+            max-width: 100%;
+        }
+
         body {
             background: transparent;
             font-family: Arial, sans-serif;
@@ -30,7 +35,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             color: white;
             position: relative;
             min-height: 100vh;
-        }     
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
         /* Відео фон */
         #bg-video {
             position: fixed;
@@ -66,6 +74,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .logo-image {
     width: 100px;
     height: 100px;
+    max-width: 100%;
+    object-fit: contain;
     border-radius: 40%;
     margin-right: 15px;
     border: 2px solid #e60000;
@@ -190,6 +200,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             text-decoration: none;
             font-weight: bold;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 24px auto 28px;
+            text-align: center;
+        }
+
+        .hero-call-btn {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 58px;
+            padding: 12px 28px;
+            background: #e60000;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            border: 2px solid #e60000;
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: center;
+            transition: all 0.3s ease;
+            animation: heroCallPulse 2.6s ease-in-out infinite;
+        }
+
+        .hero-call-btn:hover {
+            background: #b30000;
+            border-color: #b30000;
+            color: white;
+        }
+
+        @keyframes heroCallPulse {
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 rgba(230,0,0,0);
+            }
+
+            50% {
+                transform: scale(1.035);
+                box-shadow: 0 0 18px rgba(230,0,0,0.42), 0 0 0 7px rgba(230,0,0,0.12);
+            }
+        }
+
+        .hero-call-label {
+            display: block;
+            font-size: 0.75rem;
+            opacity: 0.95;
+            text-transform: uppercase;
+        }
+
+        .hero-call-number {
+            display: block;
+            font-size: 1.25rem;
         }
 
         /* Стилі для телефонних кнопок з іконками */
@@ -671,11 +740,56 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         /* Адаптивність */
         @media (max-width: 768px) {
+            html,
+            body {
+                width: 100%;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+            section,
+            header,
+            footer,
+            nav,
+            .container,
+            .hero-content,
+            .contact-wrapper,
+            .contact-info,
+            .contact-form {
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: calc(100% - 28px);
+            }
+
+            section {
+                padding: 56px 0;
+            }
+
             .header-inner {
                 flex-direction: column;
                 text-align: center;
             }
-            
+
+            .logo {
+                align-items: center;
+            }
+
+            .logo-image {
+                width: 100px;
+                height: 100px;
+                margin-right: 15px;
+                object-fit: contain;
+            }
+
+            .logo-text {
+                font-size: 2rem !important;
+                font-weight: 1000 !important;
+                color: white !important;
+            }
+
             nav ul {
                 margin: 15px 0;
                 flex-wrap: wrap;
@@ -689,28 +803,51 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .phone-block {
                 text-align: center;
             }
-            
+
             .hero-custom {
-                padding: 15px 0;
-                min-height: 100px;
+                padding: 20px 0 32px !important;
+                min-height: auto;
             }
-            
+
+            .hero-content {
+                overflow-wrap: break-word;
+            }
+
             .hero-content h1 {
                 font-size: 2rem;
+                margin-bottom: 1rem;
             }
-            
+
             .hero-content p {
                 font-size: 1rem;
+                margin-bottom: 1.4rem;
+                line-height: 1.45;
             }
-            
+
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
             .hero-phone {
                 font-size: 1.2rem;
             }
-            
+
+            .hero-cta {
+                margin: 22px auto 26px;
+            }
+
+            .hero-call-btn {
+                width: 100%;
+                max-width: 320px;
+                min-height: 56px;
+                padding: 12px 18px;
+            }
+
             .phone-button-container {
                 align-items: center;
             }
-            
+
             .phone-button {
                 width: 100%;
                 max-width: 300px;
@@ -741,6 +878,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .schedule-day,
             .schedule-time {
                 text-align: center;
+            }
+
+            .btn,
+            .contact-form button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 100%;
+                min-height: 48px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .contact-form button {
+                width: 100%;
             }
         /* ТЕРМІНОВІ ВИПРАВЛЕННЯ */
         /* Видалення всіх непотрібних рамок та ліній */
@@ -790,6 +944,78 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             border: 1px solid rgba(255,255,255,0.3) !important;
             background: rgba(255,255,255,0.1) !important;
         }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: calc(100% - 24px);
+            }
+
+            section {
+                padding: 44px 0;
+            }
+
+            .hero-custom {
+                padding: 18px 0 28px !important;
+            }
+
+            .logo-image {
+                width: 100px;
+                height: 100px;
+                margin-right: 15px;
+            }
+
+            .hero-content h1 {
+                font-size: 1.55rem;
+                line-height: 1.18;
+            }
+
+            .hero-content p {
+                font-size: 0.95rem;
+                line-height: 1.42;
+            }
+
+            h2 {
+                font-size: 1.7rem;
+                margin-bottom: 1.6rem;
+            }
+
+            .service-item-pricing,
+            .service-item,
+            .advantage {
+                padding: 22px 18px;
+            }
+
+            .price {
+                font-size: 1.65rem;
+            }
+
+            .schedule-simple h3,
+            .contact-info h3,
+            .contact-form h3 {
+                font-size: 1.3rem;
+            }
+
+            .hero-call-btn {
+                max-width: 100%;
+                min-height: 58px;
+                padding: 12px 16px;
+            }
+
+            .hero-call-label {
+                font-size: 0.72rem;
+            }
+
+            .hero-call-number {
+                font-size: 1.18rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-call-btn {
+                animation: none;
+            }
+        }
     </style>
 </head>
 
@@ -818,19 +1044,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 ВІДКРИТТЯ ВСІХ ТИПІВ ЗАМКІВ • ВІДКРИТТЯ ДВЕРЕЙ • ВІДКРИТТЯ СЕЙФІВ • ВІДКРИТТЯ АВТО • ВСТАНОВЛЕННЯ ТА ЗАМІНА ЗАМКІВ • ТЕРМІНОВО
             </p>
             
-        <div style="text-align: center; margin: 20px 0;">
-<div style="margin-bottom: 15px;">
-<a href="tel:0 800 301 521" style="display: inline-block; padding: 10px 25px; background: #e60000; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; margin: 5px; border: 2px solid #e60000; line-height: 1.2;">
-<span style="font-size: 0.7rem; display: block; opacity: 0.9; text-transform: uppercase;">Виклик майстра</span>
-<span style="font-size: 1.2rem; display: block;">0 800 301 521</span>
-</a>
-<a href="tel:+380632962121" style="display: inline-block; padding: 10px 25px; background: #e60000; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; margin: 5px; border: 2px solid #e60000; line-height: 1.2;">
-<span style="font-size: 0.7rem; display: block; opacity: 0.9; text-transform: uppercase;">Виклик майстра</span>
-<span style="font-size: 1.2rem; display: block;">0 800 301 521</span>
-</a>
-</div>
-<a href="#contact" class="btn">Замовити виклик</a>
-</div>
+        <div class="hero-cta">
+            <a href="tel:0800301521" class="hero-call-btn">
+                <span class="hero-call-label">ВИКЛИК МАЙСТРА</span>
+                <span class="hero-call-number">0 800 301 521</span>
+            </a>
+        </div>
           <style>
 </style>
 <div style="width: 100%; background: #1a1a1a !important; text-align: center; padding: 40px 0; margin: 0; position: relative; z-index: 10;">             

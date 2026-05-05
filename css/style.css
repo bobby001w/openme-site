@@ -11,7 +11,9 @@
 
 .logo-image {
     width: 100px;
-    height: 100px;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
     border-radius: 40%;
     margin-right: 15px;
     border: 2px solid #e60000;
