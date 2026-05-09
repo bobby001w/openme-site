@@ -342,7 +342,29 @@ a[href^="tel:"] {
     border: 1px solid rgba(255,255,255,0.3) !important;
     background: rgba(255,255,255,0.1) !important;
 }
+/* Fix white top strip */
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #111 !important;
+    overflow-x: hidden !important;
+}
 
+body > *:first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+header,
+.header,
+.hero,
+.main-container,
+.container,
+.wrapper {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
 
 
 
