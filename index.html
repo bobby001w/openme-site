@@ -1,7 +1,6 @@
-<!DOCTYPE html>
+ч'ч<!DOCTYPE html>
 <html lang="uk">
 <head>
-  <script async src="https://ob.calderovian.com/i/27ff26b408d06e0297b78c43a4fc6bcb.js" class="ct_clicktrue"></script>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -9,7 +8,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KV8RF23V');</script>
 <!-- End Google Tag Manager -->
-</script>
   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1462,6 +1460,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV8RF23V"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+      <script>
+fetch('https://anticlick.online/api/track', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+        domainId: 28,
+        url: window.location.href,
+        referrer: document.referrer,
+        userAgent: navigator.userAgent,
+        screenWidth: window.innerWidth,
+        screenHeight: window.innerHeight,
+        language: navigator.language,
+        timestamp: new Date().toISOString(),
+    }),
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.createElement("div");
+    wrapper.style = "text-align:center; margin-top:20px; overflow:hidden; white-space:nowrap;";
+
+    const link = document.createElement("a");
+    link.href = "https://anticlick.online";
+    link.target = "_blank";
+    link.style = "display:inline-flex; align-items:center; font-size:13px; color:#666; text-decoration:none; gap:6px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;";
+
+    const logo = document.createElement("img");
+    logo.src = "https://anticlick.online/assets/images/logo.webp";
+    logo.alt = "AntiClick";
+    logo.style = "width:36px; height:18px; flex-shrink:0;";
+
+    const text = document.createElement("span");
+    text.textContent = "AntiClick – Click Fraud Protection. IP Blocking in Google Ads. Visitor Analytics.";
+    text.style = "overflow:hidden; text-overflow:ellipsis; white-space:nowrap;";
+
+    link.appendChild(logo);
+    link.appendChild(text);
+    wrapper.appendChild(link);
+    document.body.appendChild(wrapper);
+});
+</script>
 </body>
 </html>
 
