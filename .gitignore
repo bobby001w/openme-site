@@ -1,0 +1,8 @@
+.venv/
+backup_pre_seo_fix.zip
+backup_pre_seo_fix.py
+analyze_openme.py
+find_duplicate_html.py
+apply_html_fixes.py
+*.pyc
+__pycache__/

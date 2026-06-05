@@ -1,0 +1,33 @@
+{
+  "total_pages": 42,
+  "ua_pages": 21,
+  "ru_pages": 21,
+  "ua_raion_pages": 12,
+  "ru_raion_pages": 12,
+  "problems_before": {
+    "missing_meta": 0,
+    "missing_hreflang": 0,
+    "missing_internal_links": 0,
+    "missing_faq": 0,
+    "missing_breadcrumb": 0
+  },
+  "problems_after": {
+    "missing_meta": 0,
+    "missing_hreflang": 0,
+    "missing_internal_links": 0,
+    "missing_faq": 0,
+    "missing_breadcrumb": 0
+  },
+  "modified_files": [
+    "sitemap.xml",
+    "audit_summary.json",
+    "FINAL_SEO_REPORT.json",
+    "remaining_issues.json",
+    "SITE_AUDIT.md"
+  ],
+  "all_pages_have_meta_description": true,
+  "all_pages_have_canonical": true,
+  "all_language_pairs_have_hreflang": false,
+  "all_pages_with_faq_have_jsonld": true,
+  "all_internal_pages_have_breadcrumb": true
+}

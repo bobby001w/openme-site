@@ -1,0 +1,12 @@
+{
+  "name": "OpenMe — аварійне відкриття замків",
+  "short_name": "OpenMe",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070B12",
+  "theme_color": "#00A8FF",
+  "icons": [
+    {"src":"/favicon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"/favicon-512.png","sizes":"512x512","type":"image/png"}
+  ]
+}

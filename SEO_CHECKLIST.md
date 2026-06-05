@@ -1,0 +1,26 @@
+# SEO Checklist for OpenMe
+
+- Created pages:
+  - index.html
+  - avariine-vidkryttia-dverei/index.html
+  - avariine-vidkryttia-avto/index.html
+  - vidkryttia-seifiv/index.html
+  - vidkryttia-harazhiv/index.html
+  - remont-zamina-zamkiv/index.html
+  - raiony/index.html and district pages
+  - RU version under /ru/
+- Where to change phone: `config.js` -> `phone` and `phoneDisplay`
+- Where to change Telegram/WhatsApp: `config.js` -> `telegram`, `whatsapp`
+- Where to change prices: `config.js` -> `prices`
+- How to update sitemap: edit `sitemap.xml`, add district and RU pages with full URLs and lastmod
+- After deploy to GitHub Pages:
+  - Verify `robots.txt` and `sitemap.xml` are accessible
+  - Ensure canonical tags point to `https://openme.com.ua/...`
+- Google Search Console checks:
+  - Submit sitemap
+  - Check coverage for errors
+  - Inspect important pages (index, service pages, district pages)
+- PageSpeed Insights checks:
+  - Ensure images are WebP/AVIF and lazy-loaded
+  - Avoid render-blocking large CSS/JS
+  - Serve resources compressed

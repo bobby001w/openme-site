@@ -1,0 +1,94 @@
+{
+  "before_counts": {
+    "missing_meta": 0,
+    "missing_hreflang": 10,
+    "missing_internal_links": 0,
+    "missing_faq": 0,
+    "missing_breadcrumb": 0
+  },
+  "fixed_items": [
+    [
+      "vidkryttia-seifiv/index.html",
+      "hreflang uk"
+    ],
+    [
+      "vidkryttia-seifiv/index.html",
+      "hreflang ru"
+    ],
+    [
+      "ru/remont-zamena-zamkov/index.html",
+      "hreflang uk"
+    ],
+    [
+      "ru/remont-zamena-zamkov/index.html",
+      "hreflang ru"
+    ],
+    [
+      "vidkryttia-harazhiv/index.html",
+      "hreflang uk"
+    ],
+    [
+      "vidkryttia-harazhiv/index.html",
+      "hreflang ru"
+    ],
+    [
+      "remont-zamina-zamkiv/index.html",
+      "hreflang uk"
+    ],
+    [
+      "remont-zamina-zamkiv/index.html",
+      "hreflang ru"
+    ],
+    [
+      "ru/avarijnoe-vskrytie-dverej/index.html",
+      "hreflang uk"
+    ],
+    [
+      "ru/avarijnoe-vskrytie-dverej/index.html",
+      "hreflang ru"
+    ],
+    [
+      "avariine-vidkryttia-avto/index.html",
+      "hreflang uk"
+    ],
+    [
+      "avariine-vidkryttia-avto/index.html",
+      "hreflang ru"
+    ],
+    [
+      "ru/avarijnoe-vskrytie-avto/index.html",
+      "hreflang uk"
+    ],
+    [
+      "ru/avarijnoe-vskrytie-avto/index.html",
+      "hreflang ru"
+    ],
+    [
+      "ru/vskrytie-garazhej/index.html",
+      "hreflang uk"
+    ],
+    [
+      "ru/vskrytie-garazhej/index.html",
+      "hreflang ru"
+    ],
+    [
+      "ru/vskrytie-sejfov/index.html",
+      "hreflang uk"
+    ],
+    [
+      "ru/vskrytie-sejfov/index.html",
+      "hreflang ru"
+    ]
+  ],
+  "modified_files": [
+    "vidkryttia-seifiv/index.html",
+    "ru/remont-zamena-zamkov/index.html",
+    "vidkryttia-harazhiv/index.html",
+    "remont-zamina-zamkiv/index.html",
+    "ru/avarijnoe-vskrytie-dverej/index.html",
+    "avariine-vidkryttia-avto/index.html",
+    "ru/avarijnoe-vskrytie-avto/index.html",
+    "ru/vskrytie-garazhej/index.html",
+    "ru/vskrytie-sejfov/index.html"
+  ]
+}
