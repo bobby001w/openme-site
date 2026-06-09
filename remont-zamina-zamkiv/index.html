@@ -14,7 +14,7 @@
   <script src="/config.js"></script>
   <script src="/app.js" defer></script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Service","name":"Ремонт і заміна замків","provider":{"@type":"LocalBusiness","name":"OpenMe","telephone":"+380501234567"},"serviceArea":["Kyiv","Kyiv Oblast"]}
+  {"@context":"https://schema.org","@type":"Service","name":"Ремонт і заміна замків","provider":{"@type":"LocalBusiness","name":"OpenMe","telephone":"+380800301521"},"serviceArea":["Kyiv","Kyiv Oblast"]}
   </script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Головна", "item": "https://openme.com.ua/"}, {"@type": "ListItem", "position": 2, "name": "Ремонт і заміна замків у Києві", "item": "https://openme.com.ua/remont-zamina-zamkiv/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Які послуги надає OpenMe?", "acceptedAnswer": {"@type": "Answer", "text": "Ми відкриваємо двері, авто, сейфи, гаражі, ремонтуємо та замінюємо замки по Києву 24/7."}}, {"@type": "Question", "name": "Скільки часу займає виїзд майстра?", "acceptedAnswer": {"@type": "Answer", "text": "Час виїзду залежить від району, зазвичай 20–60 хвилин у межах Києва."}}, {"@type": "Question", "name": "Чи можна відкрити двері без пошкоджень?", "acceptedAnswer": {"@type": "Answer", "text": "У більшості випадків використовується акуратна техніка, яка не пошкоджує замок або двері."}}, {"@type": "Question", "name": "Чи приїжджають уночі?", "acceptedAnswer": {"@type": "Answer", "text": "Так, служба працює цілодобово, включно з нічними викликами."}}, {"@type": "Question", "name": "Як швидко можна дізнатися ціну?", "acceptedAnswer": {"@type": "Answer", "text": "Ми називаємо орієнтовну ціну після опису замка або фото, а остаточну — після огляду на місці."}}]}</script>
@@ -22,19 +22,138 @@
 <link rel="alternate" hreflang="ru" href="https://openme.com.ua/ru/remont-zamena-zamkov/">
 </head>
 <body class="bg-dark">
-  <header class="site-header"><div class="container"><a class="logo" href="/">OpenMe</a></div></header>
+  <header class="site-header"><div class="container header-inner"><a class="logo" href="/"><img src="/assets/images/openme-logo-header-cropped.png" alt="OpenMe"></a><input class="mobile-nav-checkbox" type="checkbox" id="mobileNavToggle" hidden>
+    <label class="menu-toggle" for="mobileNavToggle" aria-label="Відкрити меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label><nav class="main-nav" id="mainNav" aria-label="Main navigation"><ul><li class="language-switcher"><div class="language-switcher" aria-label="Language switcher"><a href="/remont-zamina-zamkiv/" class="active">UA</a><a href="/ru/remont-zamena-zamkov/">RU</a></div></li><li><a href="/avariine-vidkryttia-dverei/">Двері</a></li><li><a href="/avariine-vidkryttia-avto/">Авто</a></li><li><a href="/vidkryttia-seifiv/">Сейфи</a></li><li><a href="/vidkryttia-harazhiv/">Гаражі</a></li><li><a href="/remont-zamina-zamkiv/">Ремонт</a></li><li><a href="/raiony/">Райони</a></li><li><a href="#prices">Ціни</a></li><li><a href="#faq">FAQ</a></li></ul></nav><div class="header-contacts"><div class="language-switcher" aria-label="Language switcher"><a href="/remont-zamina-zamkiv/" class="active">UA</a><a href="/ru/remont-zamena-zamkov/">RU</a></div><a class="phone" href="tel:+380800301521">0 800 301 521</a><a class="cta" href="tel:+380800301521">Викликати майстра</a></div></div></header>
+  <div class="mobile-messenger-bar" aria-label="Швидкий звʼязок">
+  <a class="messenger-btn messenger-btn--telegram" href="https://t.me/Nikolay2962121" target="_blank" rel="noopener">
+    <span class="messenger-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+        <path d="M21.9 4.4c.3-1.1-.7-2-1.7-1.6L3.3 9.3c-1.2.5-1.1 2.2.1 2.5l4.3 1.3 1.7 5.4c.4 1.2 1.9 1.4 2.6.4l2.5-3.5 4.6 3.4c.9.7 2.2.2 2.4-.9l3.4-13.5zM8.3 12.2l9.7-5.9-7.8 7.5-.3 3.2-1.6-4.8z"/>
+      </svg>
+    </span>
+    <span>Telegram</span>
+  </a>
+
+  <a class="messenger-btn messenger-btn--whatsapp" href="https://wa.me/380962962121" target="_blank" rel="noopener">
+    <span class="messenger-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+        <path d="M12 2a9.8 9.8 0 0 0-8.5 14.7L2.4 22l5.4-1.4A9.9 9.9 0 1 0 12 2zm0 1.9a8 8 0 0 1 0 16 8.1 8.1 0 0 1-3.9-1l-.4-.2-3.1.8.8-3-.2-.4A8 8 0 0 1 12 3.9zm-3.2 4.2c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.3 2 3.2 5 4.3 2.5 1 3 .8 3.5.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.7-.4l-2-1c-.3-.1-.6-.1-.8.2l-.7.9c-.2.3-.4.3-.8.1-.4-.2-1.5-.6-2.8-1.8-1-1-1.7-2.1-1.9-2.4-.2-.4 0-.6.2-.8l.5-.6c.1-.2.2-.4.3-.6.1-.2 0-.5 0-.7l-.9-2.1c-.2-.5-.4-.5-.7-.5h-.6z"/>
+      </svg>
+    </span>
+    <span>WhatsApp</span>
+  </a>
+</div>
   <main class="container">
-    <h1>Ремонт і заміна замків у Києві</h1>
-    <p>Ремонт механізмів, заміна серцевини, повна заміна замка після втрати ключів або пошкодження. Професійний підхід і роз'яснення варіантів.</p>
+    <section class="page-hero page-hero--repair">
+      <div class="page-hero-grid">
+        <div class="page-hero-copy">
+          <span class="eyebrow">Ремонт і заміна замків</span>
+          <h1>Ремонт і заміна замків у Києві</h1>
+          <p class="lead">Ремонт механізмів, заміна серцевини або повна заміна замка. Майстер приїжджає з інструментами, надає консультацію та варіанти вирішення.</p>
+          <div class="cta-block">
+            <a class="btn btn-primary" href="tel:+380800301521">Викликати майстра</a>
+            <a class="btn btn-secondary" id="tg-link" href="https://t.me/Nikolay2962121">Telegram</a>
+            <a class="btn btn-secondary" id="wa-link" href="https://wa.me/380962962121">WhatsApp</a>
+          </div>
+          <div class="hero-badges">
+            <span>Оплата після роботи</span>
+            <span>Оцінка по фото</span>
+            <span>Професійні інструменти</span>
+          </div>
+        </div>
+        <div class="page-hero-visual">
+          <img class="page-hero-image" src="/assets/images/remont_i_zamena.jpg" alt="Ремонт і заміна замків у Києві" loading="eager">
+        </div>
+      </div>
+    </section>
     <h2>Заміна серцевини замка</h2>
     <p>Якщо замок можна зберегти, ми виконуємо заміну серцевини замка з мінімальним втручанням у двері. Це часто вигідніше, ніж повна заміна механізму.</p>
     <p><a href="/zamina-sertsevyny-zamka/">Детальніше про заміну серцевини</a></p>
     <h2>Коли ремонтувати, а коли міняти</h2>
     <p>Якщо замок можна відновити без ризику — робимо ремонт. Якщо механізм зношений або після злому — рекомендуємо заміну.</p>
-    <h2>Ціна</h2>
-    <p>Ремонт — від 600 грн, заміна — від 900 грн. Точна сума залежить від моделі і складності робіт.</p>
-    <p><a class="btn btn-primary" href="tel:+380501234567">Подзвонити майстру</a></p>
+    <section id="prices" class="price-section">
+      <h2>Ціни</h2>
+      <div class="price-cards">
+        <div class="price-card">
+          <h3>Послуги</h3>
+          <div class="price-table">
+            <div class="price-row"><div class="price-name">Виклик майстра</div><div class="price-value">1 000 ₴</div></div>
+            <div class="price-row"><div class="price-name">Ремонт замка</div><div class="price-value">від 600 ₴</div></div>
+            <div class="price-row"><div class="price-name">Заміна серцевини</div><div class="price-value">від 900 ₴</div></div>
+            <div class="price-row"><div class="price-name">Повна заміна замка</div><div class="price-value">від 1 200 ₴</div></div>
+          </div>
+        </div>
+        <div class="price-card">
+          <h3>Матеріали & послуги</h3>
+          <div class="price-table">
+            <div class="price-row"><div class="price-name">Серцевина стандарт</div><div class="price-value">від 300 ₴</div></div>
+            <div class="price-row"><div class="price-name">Серцевина підвищеної стійкості</div><div class="price-value">від 900 ₴</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="service-cta"><a class="btn btn-primary" href="tel:+380800301521">Зателефонувати майстру</a></div>
+    </section>
+
+    <section class="service-seo-content">
+      <h2>Ремонт та заміна замків у Києві — надійно та професійно</h2>
+      <p>Сервіс OpenMe виконує ремонт замків, заміну серцевини та повну заміну замкових механізмів. Ми орієнтуємось на довгостроковий результат: міняємо лише те, що дійсно потребує заміни, і даємо варіанти за бюджетом та за захищеністю.</p>
+
+      <h3>Коли ремонт є доцільним</h3>
+      <p>Якщо механіка працює, але є заїдання або легкі пошкодження, часто достатньо сервісного ремонту: очищення, заміна окремих деталей, підгонка. Це економить кошти та зберігає конструкцію дверей.</p>
+
+      <h3>Коли краще міняти</h3>
+      <p>При корозії, сильному зносі або після злому найкраще виконати заміну серцевини або всього замка. Ми допоможемо підібрати серцевину за рівнем захисту і встановимо її з гарантією.</p>
+
+      <h3>Наш підхід</h3>
+      <ul class="service-seo-list">
+        <li>Діагностика на місці</li>
+        <li>Робота з оригінальними та сервісними запчастинами</li>
+        <li>Гарантія на зроблені роботи</li>
+      </ul>
+
+      <p>Для точної оцінки надішліть фото замка або зателефонуйте — ми проконсультуємо і швидко відправимо майстра, якщо потрібно.</p>
+    </section>
   
+    <section class="brand-section">
+      <h2>З якими замками працюємо</h2>
+      <p>Працюємо з поширеними циліндровими, сувальдними, врізними, накладними та електронними замками. Якщо не знаєте бренд — можна надіслати фото замка в месенджер.</p>
+            <div class="brand-grid">
+        <div class="brand-chip brand-logo"><img src="/assets/images/mottura.png" alt="Mottura logo"></div>
+        <div class="brand-chip brand-logo"><img src="/assets/images/cisa.png" alt="Cisa logo"></div>
+        <div class="brand-chip brand-logo"><img src="/assets/images/Securemme.png" alt="Securemme logo"></div>
+        <div class="brand-chip brand-logo"><img src="/assets/images/Mul-T-Lock.jpg" alt="Mul-T-Lock logo"></div>
+        <div class="brand-chip brand-logo"><img src="/assets/images/kale.jpeg" alt="Kale logo"></div>
+        <div class="brand-chip brand-logo"><img src="/assets/images/Apecs.png" alt="Apecs logo"></div>
+        <div class="brand-chip brand-logo"><img src="/assets/images/abloy.jpeg" alt="Abloy logo"></div>
+      </div>
+      <p class="brand-note">Інші бренди замків, які ми також обслуговуємо: Gerda, Dierre, Rostex, Border, Elbor, Guardian, AGB, ISEO, Yale.</p>
+    
+    </section>
+
+    <section class="service-area-section">
+      <h2>Зона виїзду</h2>
+      <p>Виїжджаємо по Києву та області, включаючи передмістя. Виберіть потрібний район або зателефонуйте — орієнтовний час приїзду 20–60 хвилин.</p>
+      <div class="area-grid">
+        <a href="/raiony/darnytskyi-raion/">Дарницький</a>
+        <a href="/raiony/desnianskyi-raion/">Деснянський</a>
+        <a href="/raiony/dniprovskyi-raion/">Днипровський</a>
+        <a href="/raiony/holosiivskyi-raion/">Голосіївський</a>
+        <a href="/raiony/obolon/">Оболонь</a>
+        <a href="/raiony/pechersk/">Печерськ</a>
+        <a href="/raiony/podilskyi-raion/">Подільський</a>
+        <a href="/raiony/pozniaky/">Позняки</a>
+        <a href="/raiony/shevchenkivskyi-raion/">Шевченківський</a>
+        <a href="/raiony/solomianskyi-raion/">Соломʼянський</a>
+        <a href="/raiony/sviatoshynskyi-raion/">Святошинський</a>
+        <a href="/raiony/troieshchyna/">Троєщина</a>
+      </div>
+      <p class="area-note">Також працюємо в області та передмістях. Позвоніть або напишіть у Telegram/WhatsApp, щоб уточнити доступність вашої локації.</p>
+    </section>
+
 <section id="faq" class="faq">
   <h2>Питання та відповіді</h2>
   <details><summary>Які послуги надає OpenMe?</summary><p>Ми відкриваємо двері, авто, сейфи, гаражі, ремонтуємо та замінюємо замки по Києву 24/7.</p></details>
@@ -47,9 +166,17 @@
 
 <section class="links">
   <h2>Корисні посилання</h2>
-  <ul>
+    <ul>
     <li><a href="/raiony/">Райони Києва</a></li>
     <li><a href="/avariine-vidkryttia-avto/">Відкриття авто</a></li>
     <li><a href="/avariine-vidkryttia-dverei/">Відкриття дверей</a></li>
     <li><a href="/remont-zamina-zamkiv/">Ремонт замків</a></li>
     <li><a href="/zamina-sertsevyny-zamka/">Заміна серцевини замка</a></li>
+    </ul>
+  </section>
+
+  <div class="mobile-call-bar"><a class="btn-call" href="tel:+380800301521">Зателефонувати майстру</a></div>
+
+  </main>
+  </body>
+  </html>

@@ -2,10 +2,10 @@
 window.OpenMeConfig = {
   brand: 'OpenMe',
   domain: 'https://openme.com.ua',
-  phone: '+380501234567',
-  phoneDisplay: '+38 (050) 123-45-67',
-  telegram: 'https://t.me/openme_ks',
-  whatsapp: 'https://wa.me/380501234567',
+  phone: '+380800301521',
+  phoneDisplay: '0 800 301 521',
+  telegram: 'https://t.me/Nikolay2962121',
+  whatsapp: 'https://wa.me/380962962121',
   city: 'Київ',
   prices: {
     door: 500,
@@ -25,5 +25,51 @@ window.OpenMeConfig = {
   ],
   districts:[
     'obolon','pozniaky','pechersk','troieshchyna','solomianskyi-raion','shevchenkivskyi-raion','holosiivskyi-raion','darnytskyi-raion','desnianskyi-raion','podilskyi-raion','sviatoshynskyi-raion','dniprovskyi-raion'
-  ]
+  ],
+  /* Language mapping: UA → RU and RU → UA */
+  languageMap: {
+    '/': '/ru/',
+    '/ru/': '/',
+    '/avariine-vidkryttia-dverei/': '/ru/avarijnoe-vskrytie-dverej/',
+    '/ru/avarijnoe-vskrytie-dverej/': '/avariine-vidkryttia-dverei/',
+    '/avariine-vidkryttia-avto/': '/ru/avarijnoe-vskrytie-avto/',
+    '/ru/avarijnoe-vskrytie-avto/': '/avariine-vidkryttia-avto/',
+    '/vidkryttia-seifiv/': '/ru/vskrytie-sejfov/',
+    '/ru/vskrytie-sejfov/': '/vidkryttia-seifiv/',
+    '/vidkryttia-harazhiv/': '/ru/vskrytie-garazhej/',
+    '/ru/vskrytie-garazhej/': '/vidkryttia-harazhiv/',
+    '/remont-zamina-zamkiv/': '/ru/remont-zamena-zamkov/',
+    '/ru/remont-zamena-zamkov/': '/remont-zamina-zamkiv/',
+    '/vidkryttia-zamka-bez-poshkodzhen/': '/ru/vskrytie-zamka-bez-povrezhdeniy/',
+    '/ru/vskrytie-zamka-bez-povrezhdeniy/': '/vidkryttia-zamka-bez-poshkodzhen/',
+    '/zamina-sertsevyny-zamka/': '/ru/zamena-lichinki-zamka/',
+    '/ru/zamena-lichinki-zamka/': '/zamina-sertsevyny-zamka/',
+    '/raiony/': '/ru/raiony/',
+    '/ru/raiony/': '/raiony/',
+    /* District mappings */
+    '/raiony/obolon/': '/ru/raiony/obolon/',
+    '/ru/raiony/obolon/': '/raiony/obolon/',
+    '/raiony/pozniaky/': '/ru/raiony/poznyaki/',
+    '/ru/raiony/poznyaki/': '/raiony/pozniaky/',
+    '/raiony/pechersk/': '/ru/raiony/pechersk/',
+    '/ru/raiony/pechersk/': '/raiony/pechersk/',
+    '/raiony/troieshchyna/': '/ru/raiony/troeshchina/',
+    '/ru/raiony/troeshchina/': '/raiony/troieshchyna/',
+    '/raiony/solomianskyi-raion/': '/ru/raiony/solomenskiy-raion/',
+    '/ru/raiony/solomenskiy-raion/': '/raiony/solomianskyi-raion/',
+    '/raiony/shevchenkivskyi-raion/': '/ru/raiony/shevchenkovskiy-raion/',
+    '/ru/raiony/shevchenkovskiy-raion/': '/raiony/shevchenkivskyi-raion/',
+    '/raiony/holosiivskyi-raion/': '/ru/raiony/goloseevskiy-raion/',
+    '/ru/raiony/goloseevskiy-raion/': '/raiony/holosiivskyi-raion/',
+    '/raiony/darnytskyi-raion/': '/ru/raiony/darnitskiy-raion/',
+    '/ru/raiony/darnitskiy-raion/': '/raiony/darnytskyi-raion/',
+    '/raiony/desnianskyi-raion/': '/ru/raiony/desnyanskiy-raion/',
+    '/ru/raiony/desnyanskiy-raion/': '/raiony/desnianskyi-raion/',
+    '/raiony/podilskyi-raion/': '/ru/raiony/podolskiy-raion/',
+    '/ru/raiony/podolskiy-raion/': '/raiony/podilskyi-raion/',
+    '/raiony/sviatoshynskyi-raion/': '/ru/raiony/svyatoshinskiy-raion/',
+    '/ru/raiony/svyatoshinskiy-raion/': '/raiony/sviatoshynskyi-raion/',
+    '/raiony/dniprovskyi-raion/': '/ru/raiony/dneprovskiy-raion/',
+    '/ru/raiony/dneprovskiy-raion/': '/raiony/dniprovskyi-raion/'
+  }
 };

@@ -14,7 +14,7 @@
   <script src="/config.js"></script>
   <script src="/app.js" defer></script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Service","name":"Аварійне відкриття авто","provider":{"@type":"LocalBusiness","name":"OpenMe","telephone":"+380501234567"},"serviceArea":["Kyiv","Kyiv Oblast"]}
+  {"@context":"https://schema.org","@type":"Service","name":"Аварійне відкриття авто","provider":{"@type":"LocalBusiness","name":"OpenMe","telephone":"+380800301521"},"serviceArea":["Kyiv","Kyiv Oblast"]}
   </script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Головна", "item": "https://openme.com.ua/"}, {"@type": "ListItem", "position": 2, "name": "Аварійне відкриття авто у Києві", "item": "https://openme.com.ua/avariine-vidkryttia-avto/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Які послуги надає OpenMe?", "acceptedAnswer": {"@type": "Answer", "text": "Ми відкриваємо двері, авто, сейфи, гаражі, ремонтуємо та замінюємо замки по Києву 24/7."}}, {"@type": "Question", "name": "Скільки часу займає виїзд майстра?", "acceptedAnswer": {"@type": "Answer", "text": "Час виїзду залежить від району, зазвичай 20–60 хвилин у межах Києва."}}, {"@type": "Question", "name": "Чи можна відкрити двері без пошкоджень?", "acceptedAnswer": {"@type": "Answer", "text": "У більшості випадків використовується акуратна техніка, яка не пошкоджує замок або двері."}}, {"@type": "Question", "name": "Чи приїжджають уночі?", "acceptedAnswer": {"@type": "Answer", "text": "Так, служба працює цілодобово, включно з нічними викликами."}}, {"@type": "Question", "name": "Як швидко можна дізнатися ціну?", "acceptedAnswer": {"@type": "Answer", "text": "Ми називаємо орієнтовну ціну після опису замка або фото, а остаточну — після огляду на місці."}}]}</script>
@@ -22,21 +22,153 @@
 <link rel="alternate" hreflang="ru" href="https://openme.com.ua/ru/avarijnoe-vskrytie-avto/">
 </head>
 <body class="bg-dark">
-  <header class="site-header"><div class="container"><a class="logo" href="/">OpenMe</a></div></header>
+  <header class="site-header"><div class="container header-inner"><a class="logo" href="/"><img src="/assets/images/openme-logo-header-cropped.png" alt="OpenMe"></a><input class="mobile-nav-checkbox" type="checkbox" id="mobileNavToggle" hidden>
+    <label class="menu-toggle" for="mobileNavToggle" aria-label="Відкрити меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label><nav class="main-nav" id="mainNav" aria-label="Main navigation"><ul><li class="language-switcher"><div class="language-switcher" aria-label="Language switcher"><a href="/avariine-vidkryttia-avto/" class="active">UA</a><a href="/ru/avarijnoe-vskrytie-avto/">RU</a></div></li><li><a href="/avariine-vidkryttia-dverei/">Двері</a></li><li><a href="/avariine-vidkryttia-avto/">Авто</a></li><li><a href="/vidkryttia-seifiv/">Сейфи</a></li><li><a href="/vidkryttia-harazhiv/">Гаражі</a></li><li><a href="/remont-zamina-zamkiv/">Ремонт</a></li><li><a href="/raiony/">Райони</a></li><li><a href="#prices">Ціни</a></li><li><a href="#faq">FAQ</a></li></ul></nav><div class="header-contacts"><div class="language-switcher" aria-label="Language switcher"><a href="/avariine-vidkryttia-avto/" class="active">UA</a><a href="/ru/avarijnoe-vskrytie-avto/">RU</a></div><a class="phone" href="tel:+380800301521">0 800 301 521</a><a class="cta" href="tel:+380800301521">Викликати майстра</a></div></div></header>
+  <div class="mobile-messenger-bar" aria-label="Швидкий звʼязок">
+  <a class="messenger-btn messenger-btn--telegram" href="https://t.me/Nikolay2962121" target="_blank" rel="noopener">
+    <span class="messenger-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+        <path d="M21.9 4.4c.3-1.1-.7-2-1.7-1.6L3.3 9.3c-1.2.5-1.1 2.2.1 2.5l4.3 1.3 1.7 5.4c.4 1.2 1.9 1.4 2.6.4l2.5-3.5 4.6 3.4c.9.7 2.2.2 2.4-.9l3.4-13.5zM8.3 12.2l9.7-5.9-7.8 7.5-.3 3.2-1.6-4.8z"/>
+      </svg>
+    </span>
+    <span>Telegram</span>
+  </a>
+
+  <a class="messenger-btn messenger-btn--whatsapp" href="https://wa.me/380962962121" target="_blank" rel="noopener">
+    <span class="messenger-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+        <path d="M12 2a9.8 9.8 0 0 0-8.5 14.7L2.4 22l5.4-1.4A9.9 9.9 0 1 0 12 2zm0 1.9a8 8 0 0 1 0 16 8.1 8.1 0 0 1-3.9-1l-.4-.2-3.1.8.8-3-.2-.4A8 8 0 0 1 12 3.9zm-3.2 4.2c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.3 2 3.2 5 4.3 2.5 1 3 .8 3.5.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.7-.4l-2-1c-.3-.1-.6-.1-.8.2l-.7.9c-.2.3-.4.3-.8.1-.4-.2-1.5-.6-2.8-1.8-1-1-1.7-2.1-1.9-2.4-.2-.4 0-.6.2-.8l.5-.6c.1-.2.2-.4.3-.6.1-.2 0-.5 0-.7l-.9-2.1c-.2-.5-.4-.5-.7-.5h-.6z"/>
+      </svg>
+    </span>
+    <span>WhatsApp</span>
+  </a>
+</div>
   <main class="container">
-    <h1>Аварійне відкриття авто у Києві</h1>
-    <p>Відкриваємо авто без розбиття скла і зайвих ушкоджень. Допомагаємо, якщо ключі залишилися в салоні, сів акумулятор або не відкривається багажник.</p>
+    <section class="page-hero page-hero--car">
+      <div class="page-hero-grid">
+        <div class="page-hero-copy">
+          <span class="eyebrow">Аварійне відкриття авто</span>
+          <h1>Аварійне відкриття авто у Києві</h1>
+          <p class="lead">Відкриваємо авто без зайвих пошкоджень — ключі в салоні, проблеми з багажником або замком. Швидко і акуратно.</p>
+          <div class="cta-block">
+            <a class="btn btn-primary" href="tel:+380800301521">Викликати майстра</a>
+            <a class="btn btn-secondary" id="tg-link" href="https://t.me/Nikolay2962121">Telegram</a>
+            <a class="btn btn-secondary" id="wa-link" href="https://wa.me/380962962121">WhatsApp</a>
+          </div>
+          <div class="hero-badges">
+            <span>Швидко й акуратно</span>
+            <span>Без розбиття скла</span>
+          </div>
+        </div>
+        <div class="page-hero-visual">
+          <img class="page-hero-image" src="/assets/images/auto.jpg" alt="Майстер відкриває автомобільний замок" loading="eager">
+        </div>
+      </div>
+    </section>
     <h2>Типові випадки</h2>
     <ul>
       <li>Ключі в салоні</li>
       <li>Сів акумулятор</li>
       <li>Не відкривається багажник</li>
     </ul>
-    <h2>Марки авто</h2>
-    <p>Працюємо з більшістю популярних марок: Toyota, Volkswagen, Skoda, BMW, Audi, Mercedes-Benz, Renault, Ford, Nissan, Kia, Hyundai, Opel, Mazda.</p>
-    <h2>Ціна</h2>
-    <p>Відкриття авто — від 700 грн. Точна ціна залежить від ситуації.</p>
-    <p><a class="btn btn-primary" href="tel:+380501234567">Подзвонити майстру</a></p>
+    <section class="auto-brand-section">
+      <h2>З якими авто працюємо</h2>
+      <p>Допомагаємо з більшістю популярних марок авто. Якщо модель не в списку — можна надіслати фото або опис ситуації в месенджер.</p>
+      <div class="brand-logo-grid">
+        <article class="brand-logo-card">
+          <img src="/assets/images/toyota.jpeg" alt="Toyota">
+        </article>
+        <article class="brand-logo-card">
+          <img src="/assets/images/volkswagen.png" alt="Volkswagen">
+        </article>
+        <article class="brand-logo-card">
+          <img src="/assets/images/Skoda.jpeg" alt="Skoda">
+        </article>
+        <article class="brand-logo-card">
+          <img src="/assets/images/BMW.webp" alt="BMW">
+        </article>
+        <article class="brand-logo-card">
+          <img src="/assets/images/Mercedes-Benz.png" alt="Mercedes-Benz">
+        </article>
+        <article class="brand-logo-card">
+          <img src="/assets/images/lexus.png" alt="Lexus">
+        </article>
+      </div>
+      <p class="brand-more-text">
+        Працюємо також з іншими марками: Audi, Renault, Ford, Nissan, Kia, Hyundai, Opel, Mazda, Peugeot, Citroën, Honda, Volvo.
+      </p>
+    </section>
+    <section id="prices" class="price-section">
+      <h2>Ціни</h2>
+      <div class="price-cards">
+        <div class="price-card">
+          <h3>Послуги</h3>
+          <div class="price-table">
+            <div class="price-row"><div class="price-name">Виклик майстра</div><div class="price-value">1 000 ₴</div></div>
+            <div class="price-row"><div class="price-name">Аварійне відкриття легкового авто</div><div class="price-value">від 300 ₴</div></div>
+            <div class="price-row"><div class="price-name">Аварійне відкриття вантажного авто</div><div class="price-value">від 500 ₴</div></div>
+            <div class="price-row"><div class="price-name">Відкриття багажника</div><div class="price-value">від 400 ₴</div></div>
+          </div>
+        </div>
+        <div class="price-card">
+          <h3>Додатково</h3>
+          <div class="price-table">
+            <div class="price-row"><div class="price-name">Виготовлення дубліката ключа</div><div class="price-value">від 500 ₴</div></div>
+            <div class="price-row"><div class="price-name">Запуск двигуна (бустер)</div><div class="price-value">від 300 ₴</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="service-cta">
+        <a class="btn btn-primary" href="tel:+380800301521">Зателефонувати майстру</a>
+      </div>
+    </section>
+
+    <section class="service-seo-content">
+      <h2>Аварійне відкриття авто у Києві без пошкоджень</h2>
+      <p>OpenMe — сервіс, що спеціалізується на оперативному відкритті автомобілів у Києві та області. Наші майстри працюють акуратно і професійно, використовуючи інструменти, які дозволяють відкрити двері або багажник без пошкоджень лакофарбового покриття і замкових механізмів. Ми виїжджаємо швидко й готові допомогти у різних ситуаціях: ключі в салоні, сів акумулятор, зламався ключ, неможливо відкрити багажник.</p>
+
+      <h3>Коли потрібен майстер з відкриття авто</h3>
+      <p>Звичайно, перша паніка — це нормально, але важливо не намагатися вирішити проблему методами, які призведуть до зайвих витрат: відкривання ломом, розбивання скла або самостійне втручання в електроніку. Майстри OpenMe швидко оцінять ситуацію й оберуть метод, що мінімізує ризики. Ми працюємо з механічними та електронними замками, картковими та кнопковими системами, сучасними системами доступу.</p>
+
+      <h3>З якими ситуаціями допомагаємо</h3>
+      <p>Ми відкриваємо легкові та вантажні автомобілі, відновлюємо доступ до багажника, допомагаємо при розрядженому акумуляторі (старт-послуга), виготовляємо дублікат ключа на місці або з виїздом у майстерню. Якщо потрібно — консультую щодо безпеки після відкриття й можливих замін замка чи серцевини.</p>
+
+      <h3>Чому звертаються до OpenMe</h3>
+      <p>Клієнти обирають нас за швидкість виїзду, акуратність і прозорі ціни. Ми надаємо детальну консультацію та орієнтовну вартість по телефону — остаточна ціна формується на місці. Наші майстри мають досвід роботи з різними марками і моделями, знають особливості сучасних систем доступу й гарантують коректну роботу після виїзду.</p>
+
+      <ul class="service-seo-list">
+        <li>Швидкий виїзд по Києву та області</li>
+        <li>Акуратне відкриття без пошкоджень</li>
+        <li>Гарантія на виконані роботи</li>
+        <li>Можливість виготовлення дублікату ключа</li>
+      </ul>
+
+      <p>Якщо ви опинилися в складній ситуації — зателефонуйте нам. Ми підкажемо, що робити, і направимо найближчого майстра. OpenMe працює 24/7, і ми дбаємо про безпеку вашого автомобіля та комфорт клієнта.</p>
+    </section>
+
+    <section class="service-area-section">
+      <h2>Зона виїзду</h2>
+      <p>Виїжджаємо по Києву та області, включаючи передмістя. Виберіть потрібний район або зателефонуйте — орієнтовний час приїзду 20–60 хвилин.</p>
+      <div class="area-grid">
+        <a href="/raiony/darnytskyi-raion/">Дарницький</a>
+        <a href="/raiony/desnianskyi-raion/">Деснянський</a>
+        <a href="/raiony/dniprovskyi-raion/">Днипровський</a>
+        <a href="/raiony/holosiivskyi-raion/">Голосіївський</a>
+        <a href="/raiony/obolon/">Оболонь</a>
+        <a href="/raiony/pechersk/">Печерськ</a>
+        <a href="/raiony/podilskyi-raion/">Подільський</a>
+        <a href="/raiony/pozniaky/">Позняки</a>
+        <a href="/raiony/shevchenkivskyi-raion/">Шевченківський</a>
+        <a href="/raiony/solomianskyi-raion/">Соломʼянський</a>
+        <a href="/raiony/sviatoshynskyi-raion/">Святошинський</a>
+        <a href="/raiony/troieshchyna/">Троєщина</a>
+      </div>
+      <p class="area-note">Також працюємо в області та передмістях. Позвоніть або напишіть у Telegram/WhatsApp, щоб уточнити доступність вашої локації.</p>
+    </section>
   
 <section id="faq" class="faq">
   <h2>Питання та відповіді</h2>
@@ -59,6 +191,6 @@
 </section>
 
 </main>
-  <footer class="site-footer"><div class="container">© OpenMe</div></footer>
-</body>
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-col footer-brand"><a class="footer-logo" href="/"><img src="/assets/images/openme-logo-header-cropped.png" alt="OpenMe"></a><p>Аварійне відкриття замків у Києві та області, 24/7.</p></div><div class="footer-col"><h3>Послуги</h3><ul><li><a href="/avariine-vidkryttia-dverei/">Двері</a></li><li><a href="/avariine-vidkryttia-avto/">Авто</a></li><li><a href="/vidkryttia-seifiv/">Сейфи</a></li><li><a href="/vidkryttia-harazhiv/">Гаражі</a></li><li><a href="/remont-zamina-zamkiv/">Ремонт</a></li><li><a href="/vidkryttia-zamka-bez-poshkodzhen/">Без пошкоджень</a></li><li><a href="/zamina-sertsevyny-zamka/">Серцевина</a></li></ul></div><div class="footer-col"><h3>Райони</h3><ul><li><a href="/raiony/">Райони Києва</a></li><li><a href="/">Головна</a></li></ul></div><div class="footer-col"><h3>Контакти</h3><p><a class="phone" href="tel:+380800301521">0 800 301 521</a></p><p><a id="tg-footer" href="https://t.me/Nikolay2962121">Telegram</a> · <a id="wa-footer" href="https://wa.me/380962962121">WhatsApp</a></p><p>24/7, Київ і область</p></div></div></footer>
+  <div class="mobile-call-bar"><a class="btn-call" href="tel:+380800301521">Зателефонувати майстру</a></div></body>
 </html>
